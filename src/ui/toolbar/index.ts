@@ -1,4 +1,5 @@
 import { Button } from './button'
+import * as store from '../../stores/index'
 
 export class Toolbar {
   private app: PIXI.Application

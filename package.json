@@ -21,6 +21,7 @@
     "redux-saga": "^0.15.6",
     "script-loader": "^0.7.1",
     "ts-loader": "^2.3.2",
+    "tslint": "^5.7.0",
     "typescript": "^2.4",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.7.1",

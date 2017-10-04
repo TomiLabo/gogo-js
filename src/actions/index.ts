@@ -1,14 +1,16 @@
 import { Action } from 'redux'
 
-export const SAMPLE_ACTION_NAME = 'sample/action'
-export type SAMPLE_ACTION_TYPE = typeof SAMPLE_ACTION_NAME
+export const CHANGE_LAYER_N = 'layer/change'
+export type CHANGE_LAYER_T = typeof CHANGE_LAYER_N
 
-interface SampleAction extends Action {
-  type: SAMPLE_ACTION_TYPE
+interface IChangeLayer extends Action {
+  type: CHANGE_LAYER_T
+  href: string
 }
 
-export const sampleAction = (): SampleAction => ({
-  type: SAMPLE_ACTION_NAME
+export const changeLayer = (href: string): IChangeLayer => ({
+  href,
+  type: CHANGE_LAYER_N,
 })
 
-export type AllActions = SampleAction
+export type AllActions = IChangeLayer

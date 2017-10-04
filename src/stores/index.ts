@@ -1,7 +1,7 @@
-import { applyMiddleware, compose, createStore } from 'redux'
+import { applyMiddleware, compose, createStore, Store} from 'redux'
 import { createLogger } from 'redux-logger'
 import createSagaMiddleware from 'redux-saga'
-import reducer from '../reducers/index'
+import reducer, { IAppState } from '../reducers/index'
 import rootSaga from '../sagas/index'
 
 type LoggerOption = object
@@ -11,7 +11,7 @@ const opt: LoggerOption = {
 }
 const logger: any = createLogger(opt)
 
-function configureStore() {
+function configureStore(): Store<IAppState> {
   const sagaMiddleware = createSagaMiddleware()
   const middlewares: any = []
   middlewares.push(sagaMiddleware)

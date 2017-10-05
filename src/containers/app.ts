@@ -14,11 +14,10 @@ export default class App {
   constructor(app: PIXI.Application, store: Store<IAppState>) {
     this.app = app
     this.store = store
-    this.handleUpdate = this.handleUpdate.bind(this)
     this.startBattleContainer = new StartBattleContainer(app, store)
     this.replayTacticsContainer = new ReplayTacticsContainer(app, store)
-    this.toolbar = new Toolbar(this.app)
-    this.store.subscribe(this.handleUpdate)
+    this.toolbar = new Toolbar(app)
+    this.store.subscribe(this.handleUpdate.bind(this))
   }
 
   handleUpdate() {

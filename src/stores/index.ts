@@ -13,7 +13,7 @@ const logger: any = createLogger(opt)
 
 function configureStore(): Store<IAppState> {
   const sagaMiddleware = createSagaMiddleware()
-  const middlewares: any = []
+  const middlewares: any[] = []
   middlewares.push(sagaMiddleware)
   middlewares.push(logger)
   const store = compose(applyMiddleware(...middlewares))(createStore)(reducer)

@@ -1,5 +1,5 @@
+import store from '../../stores/index'
 import { Button } from './button'
-import * as store from '../../stores/index'
 
 export class Toolbar {
   private app: PIXI.Application
@@ -21,9 +21,9 @@ export class Toolbar {
   }
 
   render() {
-    this.app.stage.addChild(this._startBattleButton.graphics);
-    this.app.stage.addChild(this._replayTacticsButton.graphics);
-    this.app.stage.addChild(this._generateAspectButton.graphics);
-    this.app.stage.addChild(this._confirmHandButton.graphics);
+    this.app.stage.addChild(this._startBattleButton.graphics)
+    this.app.stage.addChild(this._replayTacticsButton.graphics)
+    this.app.stage.addChild(this._generateAspectButton.graphics)
+    this.app.stage.addChild(this._confirmHandButton.graphics)
   }
 }

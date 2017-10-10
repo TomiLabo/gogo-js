@@ -1,3 +1,4 @@
+import * as PIXI from 'pixi.js'
 import { Store } from 'redux'
 import StartBattleComponent from '../components/start_battle_components/index'
 import { IAppState } from '../reducers/index'

@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "release-build": "NODE_ENV=production webpack"
   },
   "dependencies": {
     "@types/pixi.js": "^4.5.4",
@@ -23,6 +24,7 @@
     "ts-loader": "^2.3.2",
     "tslint": "^5.7.0",
     "typescript": "^2.4",
+    "uglifyjs-webpack-plugin": "1.0.0-beta.2",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.7.1",
     "webpack-merge": "^4.1"

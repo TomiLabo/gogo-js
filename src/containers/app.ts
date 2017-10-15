@@ -1,6 +1,6 @@
 import { Store } from 'redux'
+import { Toolbar } from '../components/ui/toolbar/index'
 import { IAppState } from '../reducers/index'
-import { Toolbar } from '../ui/toolbar/index'
 import ReplayTacticsContainer from './replay_tactics_container'
 import StartBattleContainer from './start_battle_container'
 
